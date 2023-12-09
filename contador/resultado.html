@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+</head>
+<body>
+    <h2>Resultado del conteo de letras:</h2>
+    <ul>
+        {% for letra, frecuencia in frecuencia_letras.items %}
+            <li>{{ letra }}: {{ frecuencia }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

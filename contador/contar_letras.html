@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Letras</title>
+</head>
+<body>
+    <form method="post" action="{% url 'contar_letras' %}">
+        {% csrf_token %}
+        <label for="texto">Ingrese un texto:</label><br>
+        <textarea name="texto" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Contar letras">
+    </form>
+</body>
+</html>
